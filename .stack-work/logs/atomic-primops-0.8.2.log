@@ -1,0 +1,78 @@
+Configuring atomic-primops-0.8.2...
+Preprocessing library for atomic-primops-0.8.2..
+Building library for atomic-primops-0.8.2..
+
+[;1mData\Atomics.hs:452:2: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+     warning: #warning "Assuming that store_load_barrier and friends are defined in the GHC RTS." [-Wcpp]
+     #warning "Assuming that store_load_barrier and friends are defined in the GHC RTS."
+      ^~~~~~~[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m452 |[0m[0m #[;1m[31mw[0m[0marning "Assuming that store_load_barrier and friends are defined in the GHC RTS."
+[;1m[34m    |[0m[0m[;1m[31m  ^[0m[0m
+[0m[0m[0m[1 of 3] Compiling Data.Atomics.Internal ( Data\Atomics\Internal.hs, .stack-work\dist\5c8418a7\build\Data\Atomics\Internal.o )
+
+[;1mData\Atomics\Internal.hs:70:20: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-top-binds[0m[0m[;1m][0m[0m[;1m
+    Defined but not used: data constructor `Ticket'[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m70 |[0m[0m newtype Ticket a = [;1m[35mTicket Any[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m                    ^^^^^^^^^^[0m[0m
+[0m[0m[0m[2 of 3] Compiling Data.Atomics.Counter ( Data\Atomics\Counter.hs, .stack-work\dist\5c8418a7\build\Data\Atomics\Counter.o )
+
+[;1mData\Atomics\Counter.hs:120:7: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunbanged-strict-patterns[0m[0m[;1m][0m[0m[;1m
+    Pattern bindings containing unlifted types should use
+    an outermost bang pattern:
+      (# s2#, res# #) = casIntArray# mba# 0# old# new# s1#[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m120 |[0m[0m   let [;1m[35m(# s2#, res# #) = casIntArray# mba# 0# old# new# s1#[0m[0m in
+[;1m[34m    |[0m[0m[;1m[35m       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mData\Atomics\Counter.hs:139:7: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunbanged-strict-patterns[0m[0m[;1m][0m[0m[;1m
+    Pattern bindings containing unlifted types should use
+    an outermost bang pattern:
+      (# s2#, res #) = fetchAddIntArray# mba# 0# incr# s1#[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m139 |[0m[0m   let [;1m[35m(# s2#, res #) = fetchAddIntArray# mba# 0# incr# s1#[0m[0m in
+[;1m[34m    |[0m[0m[;1m[35m       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mData\Atomics\Counter.hs:154:7: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunbanged-strict-patterns[0m[0m[;1m][0m[0m[;1m
+    Pattern bindings containing unlifted types should use
+    an outermost bang pattern:
+      (# s2#, _ #) = fetchAddIntArray# mba# 0# incr# s1#[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m154 |[0m[0m   let [;1m[35m(# s2#, _ #) = fetchAddIntArray# mba# 0# incr# s1#[0m[0m in
+[;1m[34m    |[0m[0m[;1m[35m       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m[3 of 3] Compiling Data.Atomics     ( Data\Atomics.hs, .stack-work\dist\5c8418a7\build\Data\Atomics.o )
+
+[;1mData\Atomics.hs:164:7: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunbanged-strict-patterns[0m[0m[;1m][0m[0m[;1m
+    Pattern bindings containing unlifted types should use
+    an outermost bang pattern:
+      (# s2#, res #) = casIntArray# mba# ix# old# new# s1#[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m164 |[0m[0m   let [;1m[35m(# s2#, res #) = casIntArray# mba# ix# old# new# s1#[0m[0m in
+[;1m[34m    |[0m[0m[;1m[35m       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mData\Atomics.hs:179:7: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunbanged-strict-patterns[0m[0m[;1m][0m[0m[;1m
+    Pattern bindings containing unlifted types should use
+    an outermost bang pattern:
+      (# s2#, res #) = fetchAddIntArray# mba# offset# incr# s1#[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m179 |[0m[0m   let [;1m[35m(# s2#, res #) = fetchAddIntArray# mba# offset# incr# s1#[0m[0m in
+[;1m[34m    |[0m[0m[;1m[35m       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mData\Atomics.hs:265:11: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunbanged-strict-patterns[0m[0m[;1m][0m[0m[;1m
+    Pattern bindings containing unlifted types should use
+    an outermost bang pattern:
+      (# s2#, res #) = atomicOp# mba# offset# val# s1#[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m265 |[0m[0m       let [;1m[35m(# s2#, res #) = atomicOp# mba# offset# val# s1#[0m[0m in
+[;1m[34m    |[0m[0m[;1m[35m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mData\Atomics.hs:296:7: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunbanged-strict-patterns[0m[0m[;1m][0m[0m[;1m
+    Pattern bindings containing unlifted types should use
+    an outermost bang pattern:
+      (# s2#, res #) = fetchAddIntArray# mba# offset# incr# s1#[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m296 |[0m[0m   let [;1m[35m(# s2#, res #) = fetchAddIntArray# mba# offset# incr# s1#[0m[0m in
+[;1m[34m    |[0m[0m[;1m[35m       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0mInstalling library in C:\sr\snapshots\b1c64c5f\lib\x86_64-windows-ghc-8.2.2\atomic-primops-0.8.2-D4ZHN0A7WE8Jq7jjPfyPNe
+Registering library for atomic-primops-0.8.2..

@@ -1,0 +1,20 @@
+Configuring unagi-chan-0.4.1.0...
+Preprocessing library for unagi-chan-0.4.1.0..
+Building library for unagi-chan-0.4.1.0..
+[ 1 of 14] Compiling Control.Concurrent.Chan.Unagi.Constants ( src\Control\Concurrent\Chan\Unagi\Constants.hs, .stack-work\dist\7d103d30\build\Control\Concurrent\Chan\Unagi\Constants.o )
+[ 2 of 14] Compiling Control.Concurrent.Chan.Unagi.NoBlocking.Types ( src\Control\Concurrent\Chan\Unagi\NoBlocking\Types.hs, .stack-work\dist\7d103d30\build\Control\Concurrent\Chan\Unagi\NoBlocking\Types.o )
+[ 3 of 14] Compiling Data.Atomics.Counter.Fat ( src\Data\Atomics\Counter\Fat.hs, .stack-work\dist\7d103d30\build\Data\Atomics\Counter\Fat.o )
+[ 4 of 14] Compiling Utilities        ( src\Utilities.hs, .stack-work\dist\7d103d30\build\Utilities.o )
+[ 5 of 14] Compiling Control.Concurrent.Chan.Unagi.Unboxed.Internal ( src\Control\Concurrent\Chan\Unagi\Unboxed\Internal.hs, .stack-work\dist\7d103d30\build\Control\Concurrent\Chan\Unagi\Unboxed\Internal.o )
+[ 6 of 14] Compiling Control.Concurrent.Chan.Unagi.Unboxed ( src\Control\Concurrent\Chan\Unagi\Unboxed.hs, .stack-work\dist\7d103d30\build\Control\Concurrent\Chan\Unagi\Unboxed.o )
+[ 7 of 14] Compiling Control.Concurrent.Chan.Unagi.NoBlocking.Unboxed.Internal ( src\Control\Concurrent\Chan\Unagi\NoBlocking\Unboxed\Internal.hs, .stack-work\dist\7d103d30\build\Control\Concurrent\Chan\Unagi\NoBlocking\Unboxed\Internal.o )
+[ 8 of 14] Compiling Control.Concurrent.Chan.Unagi.NoBlocking.Unboxed ( src\Control\Concurrent\Chan\Unagi\NoBlocking\Unboxed.hs, .stack-work\dist\7d103d30\build\Control\Concurrent\Chan\Unagi\NoBlocking\Unboxed.o )
+[ 9 of 14] Compiling Control.Concurrent.Chan.Unagi.Internal ( src\Control\Concurrent\Chan\Unagi\Internal.hs, .stack-work\dist\7d103d30\build\Control\Concurrent\Chan\Unagi\Internal.o )
+[10 of 14] Compiling Control.Concurrent.Chan.Unagi.NoBlocking.Internal ( src\Control\Concurrent\Chan\Unagi\NoBlocking\Internal.hs, .stack-work\dist\7d103d30\build\Control\Concurrent\Chan\Unagi\NoBlocking\Internal.o )
+[11 of 14] Compiling Control.Concurrent.Chan.Unagi.NoBlocking ( src\Control\Concurrent\Chan\Unagi\NoBlocking.hs, .stack-work\dist\7d103d30\build\Control\Concurrent\Chan\Unagi\NoBlocking.o )
+[12 of 14] Compiling Control.Concurrent.Chan.Unagi ( src\Control\Concurrent\Chan\Unagi.hs, .stack-work\dist\7d103d30\build\Control\Concurrent\Chan\Unagi.o )
+[13 of 14] Compiling Control.Concurrent.Chan.Unagi.Bounded.Internal ( src\Control\Concurrent\Chan\Unagi\Bounded\Internal.hs, .stack-work\dist\7d103d30\build\Control\Concurrent\Chan\Unagi\Bounded\Internal.o )
+[14 of 14] Compiling Control.Concurrent.Chan.Unagi.Bounded ( src\Control\Concurrent\Chan\Unagi\Bounded.hs, .stack-work\dist\7d103d30\build\Control\Concurrent\Chan\Unagi\Bounded.o )
+ignoring (possibly broken) abi-depends field for packages
+Installing library in C:\Users\hyper\dev\playground\haskell-logger\.stack-work\install\81feb281\lib\x86_64-windows-ghc-8.4.3\unagi-chan-0.4.1.0-653lY2sppRRE7BSuSlVsrv
+Registering library for unagi-chan-0.4.1.0..
